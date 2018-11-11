@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:9.4-alpine
+    environment:
+      POSTGRES_PASSWORD: no-secret-pass
+      POSTGRES_USER: database-user
+      POSTGRES_DB: app-db
+    volumes:
+      - "./dbdata:/var/lib/postgresql/data"
+    ports:
+      - 5432:5432
+  
+  # browser client
+  db-admin:
+    image: adminer:latest
+    ports:
+      - 8080:8080
