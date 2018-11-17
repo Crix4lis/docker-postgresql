@@ -1,2 +1,2 @@
 > author: Michał Powała <br>
-> source repository: [Docker-PostgreSQL](https://github.com/Crix4lis/Docker-PostgreSQL)
+> source repository: [docker-postgresql](https://github.com/Crix4lis/docker-postgresql)
