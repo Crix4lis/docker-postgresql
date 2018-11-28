@@ -2,10 +2,10 @@ version: '3'
 
 services:
   db:
-    image: postgres:9.4-alpine
+    image: postgres:11-alpine
     environment:
-      POSTGRES_PASSWORD: no-secret-pass
-      POSTGRES_USER: database-user
+      POSTGRES_PASSWORD: abcdef
+      POSTGRES_USER: dbuser
       POSTGRES_DB: app-db
     volumes:
       - "./dbdata:/var/lib/postgresql/data"
